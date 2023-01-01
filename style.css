@@ -1,0 +1,127 @@
+body {
+    color: #fdfdfd;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+    padding: 0; 
+    margin: 0;
+}
+/* Mobile First */
+
+.thumbnail-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.topnav {
+    background-color: #141418;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 30px 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #1d1d23;
+    color: white;
+  }
+  
+  .active {
+    background-color: #141418;
+    color: white;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141418;
+    padding: 0 40px 0 40px;
+  }
+
+  .menu > ul {
+    display: flex;
+  }
+  .menu > ul > li {
+    list-style: none;
+    margin-right: 40px;
+  }
+  .menu > ul > li > a:hover {
+    color: #cdcdcd;
+  }
+  nav {
+    margin-bottom: 30px;
+  }
+  a {
+    color: #fdfdfd;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #fdfdfd;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  footer > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projet-card, .presentation, .contact {
+    background: linear-gradient(45deg, rgba(20,20,24,1) 0%, rgba(29,29,35,1) 100%);
+    border-radius: 30px;
+    padding: 25px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .topnav {
+        display: none;
+    }
+    .projets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .topnav {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .projet-card {
+        margin-bottom: 30px;
+    }
+  }

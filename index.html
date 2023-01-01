@@ -6,37 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathias Lac</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#top">
-                <span>Mathias Lac</span>
-            </a>
-            <ul>
-                <li><a href="#a-propos">A Propos</a></li>
-                <li><a href="#projets">Projets</a></li>
-            </ul>
+            <div class="menu">
+                <a href="#a-propos">
+                    <span>mathiaslac</span>
+                </a>
+                <ul>
+                    <li><a href="#a-propos">A Propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>  
+            </div>
+            <div class="topnav">
+                <a href="#a-propos" class="active">mathiaslac</a>
+                <div id="myLinks">
+                    <a href="#a-propos">A Propos</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="top">
-            <span>Présentation</span>
-        </section>
         <section id="a-propos">
-            <p>Lorem Ipsum est simplement un faux texte de l'industrie de l'impression et de la composition. Le Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, lorsqu'un imprimeur inconnu a pris une galère de caractères et l'a brouillé pour en faire un livre de spécimens de caractères. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages de Lorem Ipsum, et plus récemment avec des logiciels de publication assistée par ordinateur comme Aldus PageMaker comprenant des versions de Lorem Ipsum.</p>  
+            <div class="presentation">
+                <h3>Présentation</h3>
+                <p>Développeur Junior en autodidacte, je me suis formé sur le web à ces technologies: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>React</strong>, <strong>TailWind</strong>, <strong>NodeJs</strong>.</p>
+                <p>Passioné de musique electro-urbaine (Je suis ingénieur du son studio de base) et un peu de design à mes heures perdues (Illustrator, Spline)</p>
+            </div>
         </section>
-        <section id="projets">
-            <div id="projet1"></div>
-            <div id="projet2"></div>
-            <div id="projet3"></div>
-            <div id="projet4"></div>
-            <div id="projet5"></div>
-            <div id="projet6"></div>
+        <section class="projets">
+            <div class="projet-card" id="projet1">
+                <h3>Projet 1 : <a href="https://vagautodiag.fr" target="_blank">Vagautodiag.fr <i class="fas fa-link"></i></a></h3>
+                <img class="thumbnail-img" src="assets/img/vagautodiag.png" alt="projet1">
+                <p>Vagautodiag est l'entreprise d'un ami qui fait des diagnostiques automobiles. Je lui ai fait son site avec un cahier des charges relativement faible.</p>
+                <p>Technologie(s): <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>.</p>
+            </div>
+            <div class="projet-card" id="projet2">
+                <h3>Projet 2 : <a href="https://todolist-gamma-three.vercel.app/" target="_blank">To do list <i class="fas fa-link"></i></a></h3>
+                <img class="thumbnail-img" src="assets/img/todolist.png" alt="projet2">
+                <p>Ce projet est une initiative personnelle, qui a pour but de travailler le système "CRUD".</p> 
+                <p>Il s'agit du principe de base d'une application web: Create, Read, Update, Delete</p>
+                <p>Technologie(s): <strong>ReactJS</strong>, <strong>Bootstrap</strong>.</p>
+            </div>
+            <div class="projet-card" id="projet3">
+                <h3>Projet 3 : <a href="https://dlaudit.vercel.app/" target="_blank">DL Audit <i class="fas fa-link"></i></a></h3>
+                <img class="thumbnail-img" src="assets/img/dlaudit.png" alt="projet3">
+                <p>Un ami m'avait demandé de faire le site vitrine de l'agence d'audit de son père, l'offre est toujours en cours...</p> 
+                <p>Il s'agit d'une proposition faite de mon propre chef</p>
+                <p>Technologie(s): <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>.</p>
+            </div>
+            <div class="projet-card" id="projet4">
+                <h3>Projet 4 : <a href="https://oc-p2.vercel.app/" target="_blank">Maquette/Intégration Web <i class="fas fa-link"></i></a></h3>
+                <img class="thumbnail-img" src="assets/img/booki.png" alt="projet4">
+                <p>Voici un projet d'intégration web à partir d'une maquette PNG...</p> 
+                <p>Technologie(s): <strong>HTML</strong>, <strong>CSS</strong>.</p>
+            </div>
+            <div class="projet-card" id="projet5">
+                <h3>Projet 5 : <a href="https://www.youtube.com/watch?v=HGSMIvhyPGQ" target="_blank">Réseau Social <i class="fas fa-link"></i></a></h3>
+                <img class="thumbnail-img" src="assets/img/social-network.png" alt="projet5">
+                <p>Un projet réalisé à la base pour une commaunté Esport finalement abandonné en cours de route...</p>
+                <p>Il reprend le système CRUD dans son entièreté ainsi que la gestion d'adminitrateur via la plateforme Steam</p> 
+                <p>Technologie(s): <strong>ReactJS</strong>, <strong>CSS</strong>, <strong>Node/ExpressJS</strong>, <strong>FireBase/FireStore</strong>.</p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h3>Contactez moi</h3>
+            <a href="mailto:mathiaslac@gmail.com">mathiaslac@gmail.com</a>
         </section>
     </main>
     <footer>
-        <p>Tous droits réservés.</p>
+        <p>mathiaslac.fr. Tous droits réservés.</p>
     </footer>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/d20599ebe2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
